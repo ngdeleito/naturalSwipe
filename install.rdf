@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>naturalSwipe@ngdeleito.eu</em:id>
+    <em:version>1.0</em:version>
+    <em:type>2</em:type>
+
+    <!-- Target Application this extension can install into,
+         with minimum and maximum supported versions. -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>20.0</em:minVersion>
+        <em:maxVersion>20.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Front End MetaData -->
+    <em:bootstrap>true</em:bootstrap>
+    <em:creator>Nicolás González-Deleito</em:creator>
+    
+    <em:name>Natural Swipe</em:name>
+    <em:description>Swipe up to go to the bottom of a page; swipe down to go to the top. For users of natural scrolling.</em:description>
+
+    <em:localized>
+      <Description>
+        <em:locale>ca</em:locale>
+        <em:name>Natural Swipe</em:name>
+        <em:description>Lliscar cap amunt per anar al final d'una pagina; lliscar cap avall per anar al principi. Per a usuaris del desplaçament natural.</em:description>
+      </Description>
+    </em:localized>
+    
+    <em:localized>
+      <Description>
+        <em:locale>es</em:locale>
+        <em:name>Natural Swipe</em:name>
+        <em:description>Deslizar hacia arriba para ir al final de una página; deslizar hacia abajo para ir al principio. Para usuarios del desplazamiento natural.</em:description>
+      </Description>
+    </em:localized>
+    
+    <em:localized>
+      <Description>
+        <em:locale>fr</em:locale>
+        <em:name>Natural Swipe</em:name>
+        <em:description>Balayez vers le haut pour aller à la fin d'une page&#160; balayez vers le bas pour aller au début. Pour utilisateurs du défilement naturel.</em:description>
+      </Description>
+    </em:localized>
+    
+    <em:localized>
+      <Description>
+        <em:locale>nl</em:locale>
+        <em:name>Natural Swipe</em:name>
+        <em:description>Veeg naar boven om naar het begin van een pagina te gaan; veeg naar beneden om naar het einde te gaan. Voor gebruikers van natural scrolling.</em:description>
+      </Description>
+    </em:localized>
+  </Description>
+</RDF>
+
