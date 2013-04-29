@@ -21,6 +21,7 @@
     <!-- Front End MetaData -->
     <em:bootstrap>true</em:bootstrap>
     <em:creator>Nicolás González-Deleito</em:creator>
+    <em:homepageURL>https://github.com/ngdeleito/naturalSwipe</em:homepageURL>
     
     <em:name>Natural Swipe</em:name>
     <em:description>Swipe up to go to the bottom of a page; swipe down to go to the top. For users of natural scrolling.</em:description>
