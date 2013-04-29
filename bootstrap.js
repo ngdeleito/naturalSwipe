@@ -26,6 +26,12 @@ const swipeDownPref = "browser.gesture.swipe.down";
 function startup(data, reason) {
   var prefs = Services.prefs;
   
+  // making sure that these preferences are set to their default values (which
+  // might not be the case if Firefox was not properly closed)
+  prefs.clearUserPref(swipeUpPref);
+  prefs.clearUserPref(swipeDownPref);
+  
+  // switching both preferences
   var goTop = prefs.getCharPref(swipeUpPref);
   var goBottom = prefs.getCharPref(swipeDownPref);
   prefs.setCharPref(swipeUpPref, goBottom);
@@ -35,10 +41,8 @@ function startup(data, reason) {
 function shutdown(data, reason) {
   var prefs = Services.prefs;
   
-  var goBottom = prefs.getCharPref(swipeUpPref);
-  var goTop = prefs.getCharPref(swipeDownPref);
-  prefs.setCharPref(swipeUpPref, goTop);
-  prefs.setCharPref(swipeDownPref, goBottom);
+  prefs.clearUserPref(swipeUpPref);
+  prefs.clearUserPref(swipeDownPref);
 }
 
 function install(data, reason) {
