@@ -20,10 +20,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
 Components.utils.import("resource://gre/modules/Services.jsm");
+const swipeUpPref = "browser.gesture.swipe.up";
+const swipeDownPref = "browser.gesture.swipe.down";
 
 function startup(data, reason) {
-  const swipeUpPref = "browser.gesture.swipe.up";
-  const swipeDownPref = "browser.gesture.swipe.down";
   var prefs = Services.prefs;
   
   var goTop = prefs.getCharPref(swipeUpPref);
@@ -33,8 +33,6 @@ function startup(data, reason) {
 }
 
 function shutdown(data, reason) {
-  const swipeUpPref = "browser.gesture.swipe.up";
-  const swipeDownPref = "browser.gesture.swipe.down";
   var prefs = Services.prefs;
   
   var goBottom = prefs.getCharPref(swipeUpPref);
