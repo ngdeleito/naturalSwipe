@@ -20,17 +20,19 @@
 
     <!-- Front End MetaData -->
     <em:bootstrap>true</em:bootstrap>
-    <em:creator>Nicolás González-Deleito</em:creator>
-    <em:homepageURL>https://github.com/ngdeleito/naturalSwipe</em:homepageURL>
     
     <em:name>Natural Swipe</em:name>
     <em:description>Swipe up to go to the bottom of a page; swipe down to go to the top. For users of natural scrolling.</em:description>
+    <em:creator>Nicolás González-Deleito</em:creator>
+    <em:homepageURL>https://github.com/ngdeleito/naturalSwipe</em:homepageURL>
 
     <em:localized>
       <Description>
         <em:locale>ca</em:locale>
         <em:name>Natural Swipe</em:name>
         <em:description>Lliscar cap amunt per anar al final d'una pagina; lliscar cap avall per anar al principi. Per a usuaris del desplaçament natural.</em:description>
+        <em:creator>Nicolás González-Deleito</em:creator>
+        <em:homepageURL>https://github.com/ngdeleito/naturalSwipe</em:homepageURL>
       </Description>
     </em:localized>
     
@@ -39,6 +41,8 @@
         <em:locale>es</em:locale>
         <em:name>Natural Swipe</em:name>
         <em:description>Deslizar hacia arriba para ir al final de una página; deslizar hacia abajo para ir al principio. Para usuarios del desplazamiento natural.</em:description>
+        <em:creator>Nicolás González-Deleito</em:creator>
+        <em:homepageURL>https://github.com/ngdeleito/naturalSwipe</em:homepageURL>
       </Description>
     </em:localized>
     
@@ -46,7 +50,9 @@
       <Description>
         <em:locale>fr</em:locale>
         <em:name>Natural Swipe</em:name>
-        <em:description>Balayez vers le haut pour aller à la fin d'une page&#160; balayez vers le bas pour aller au début. Pour utilisateurs du défilement naturel.</em:description>
+        <em:description>Balayez vers le haut pour aller à la fin d'une page&#160;; balayez vers le bas pour aller au début. Pour utilisateurs du défilement naturel.</em:description>
+        <em:creator>Nicolás González-Deleito</em:creator>
+        <em:homepageURL>https://github.com/ngdeleito/naturalSwipe</em:homepageURL>
       </Description>
     </em:localized>
     
@@ -55,8 +61,9 @@
         <em:locale>nl</em:locale>
         <em:name>Natural Swipe</em:name>
         <em:description>Veeg naar boven om naar het begin van een pagina te gaan; veeg naar beneden om naar het einde te gaan. Voor gebruikers van natural scrolling.</em:description>
+        <em:creator>Nicolás González-Deleito</em:creator>
+        <em:homepageURL>https://github.com/ngdeleito/naturalSwipe</em:homepageURL>
       </Description>
     </em:localized>
   </Description>
 </RDF>
-
