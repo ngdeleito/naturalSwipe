@@ -20,6 +20,7 @@
 
     <!-- Front End MetaData -->
     <em:bootstrap>true</em:bootstrap>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
     
     <em:name>Natural Swipe</em:name>
     <em:description>Swipe up to go to the bottom of a page; swipe down to go to the top. For users of natural scrolling.</em:description>
