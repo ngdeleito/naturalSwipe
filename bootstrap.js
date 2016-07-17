@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2013 Nicolás González-Deleito
+Copyright (c) 2013--2016 Nicolás González-Deleito
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -24,25 +24,21 @@ const swipeUpPref = "browser.gesture.swipe.up";
 const swipeDownPref = "browser.gesture.swipe.down";
 
 function startup(data, reason) {
-  var prefs = Services.prefs;
-  
   // making sure that these preferences are set to their default values (which
   // might not be the case if Firefox was not properly closed)
-  prefs.clearUserPref(swipeUpPref);
-  prefs.clearUserPref(swipeDownPref);
+  Services.prefs.clearUserPref(swipeUpPref);
+  Services.prefs.clearUserPref(swipeDownPref);
   
   // switching both preferences
-  var goTop = prefs.getCharPref(swipeUpPref);
-  var goBottom = prefs.getCharPref(swipeDownPref);
-  prefs.setCharPref(swipeUpPref, goBottom);
-  prefs.setCharPref(swipeDownPref, goTop);
+  var goTop = Services.prefs.getCharPref(swipeUpPref);
+  var goBottom = Services.prefs.getCharPref(swipeDownPref);
+  Services.prefs.setCharPref(swipeUpPref, goBottom);
+  Services.prefs.setCharPref(swipeDownPref, goTop);
 }
 
 function shutdown(data, reason) {
-  var prefs = Services.prefs;
-  
-  prefs.clearUserPref(swipeUpPref);
-  prefs.clearUserPref(swipeDownPref);
+  Services.prefs.clearUserPref(swipeUpPref);
+  Services.prefs.clearUserPref(swipeDownPref);
 }
 
 function install(data, reason) {
