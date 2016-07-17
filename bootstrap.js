@@ -19,11 +19,15 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+
+/* exported startup, shutdown, install, uninstall */
+/* global Components, Services */
+
 Components.utils.import("resource://gre/modules/Services.jsm");
 const swipeUpPref = "browser.gesture.swipe.up";
 const swipeDownPref = "browser.gesture.swipe.down";
 
-function startup(data, reason) {
+function startup() {
   // making sure that these preferences are set to their default values (which
   // might not be the case if Firefox was not properly closed)
   Services.prefs.clearUserPref(swipeUpPref);
@@ -36,13 +40,13 @@ function startup(data, reason) {
   Services.prefs.setCharPref(swipeDownPref, goTop);
 }
 
-function shutdown(data, reason) {
+function shutdown() {
   Services.prefs.clearUserPref(swipeUpPref);
   Services.prefs.clearUserPref(swipeDownPref);
 }
 
-function install(data, reason) {
+function install() {
 }
 
-function uninstall(data, reason) {
+function uninstall() {
 }
