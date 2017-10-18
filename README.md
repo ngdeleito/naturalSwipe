@@ -1,4 +1,6 @@
-A Firefox extension that makes swipe gestures consistent with natural scrolling.
+Natural Swipe was a Firefox extension that made swipe gestures with three fingers consistent with natural scrolling.
+
+This extension cannot be migrated to WebExtensions and, therefore, does not work with Firefox 57+. You can continue enjoying a swiping behavior consistent with natural scrolling by manually swapping the values of the "browser.gesture.swipe.up" and the "browser.gesture.swipe.down" preferences in about:config.
 
 After installing this extension, swiping up with three fingers will take you to the bottom of a page; swiping down will take you to the top.
 
